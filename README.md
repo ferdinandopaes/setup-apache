@@ -54,9 +54,11 @@ Agora crie o arquivo html estático que será exibido ao acessar nosso servido
 sudo vim /var/www/html/app-sp/index.html
 ```
 
-Executo o restart do serviço do apache para que ele carrega as novas configurações em memória
+Executo os comandos para adicionar as devidas permissões, habilitar o novo vhost e fazer o restart do serviço do apache para que ele carrega as novas configurações em memória
 
 ```
+sudo chown -R www-data:www-data /var/www/html/
+sudo a2ensite app-sp.conf
 sudo systemctl restart apache2
 ```
 
