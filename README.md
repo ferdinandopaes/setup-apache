@@ -42,10 +42,10 @@ sudo vim /etc/apache2/apache2.conf
 sudo vim /etc/apache2/sites-available/000-default.conf
 ```
 
-Vamos criar o nosso primeiro vhost. Abra o arquivo com o comando abaixo e adicione o conteúdo que está disponivel em conf/app-sp.conf
+Vamos criar nossa primeira rota. Abra o arquivo com o comando abaixo e adicione o conteúdo que está disponivel em conf/app-sp.conf
 
 ```
-sudo vim /etc/apache2/sites-enabled/app-sp.conf
+sudo vim /etc/apache2/mods-available/alias.conf
 ```
 
 Agora crie o arquivo html estático que será exibido ao acessar nosso servidor apache via web. Use o conteúdo disponível em html/index.html
